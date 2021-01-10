@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+  int choice=0;
+  // reading choice from the user
+  printf("Enter a random number from 1 to 5:");
+  // storing the value in the choice 
+  scanf("%d",&choice);                                              
+  // comparing the given choice with each case in the switch statement
+  switch(choice)                                                      
+  {
+    case 1: printf(" Food item - Pizza \n Price - Rs 239 "); 
+    break;
+    case 2: printf(" Food item - Burger \n Price - Rs 129 ");
+    break;
+    case 3: printf(" Food item - Pasta \n Price - RS 179 ");
+    break;
+    case 4: printf(" Food item - French Fries \n Price - Rs 99 ");
+    break;
+    case 5: printf(" Food item - Sandwich \n Price - Rs 149 ");
+    break;
+    default: printf(" Enter a valid option from 1 to 5");
+  }
+  return 0;
+}
